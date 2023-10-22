@@ -5,7 +5,6 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.CommonMethods;
-
 import java.time.Duration;
 
 public class EmployeeSearchSteps extends CommonMethods {

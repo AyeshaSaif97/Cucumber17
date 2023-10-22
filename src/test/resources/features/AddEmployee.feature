@@ -45,3 +45,16 @@ Background:
         |Elaine     |Musk          |Elon      |
         |Tahiti     |Agent          |Shield      |
         |Biden        |Peggy         |Carter     |
+
+      @excel
+      Scenario: Adding multiple employees from excel file
+        When user adds multiple employees from excel using "Sheet1" and verify them
+
+        @datatable
+        Scenario: adding multiple employees from data table
+          When user adds multiple employees from data table
+            | firstName | middleName | lastName |
+            |Ela        |Musk          |Eon      |
+            |Tahii      |Agent          |Sheld      |
+            |Bidn        |Pegy         |Crter     |
+
