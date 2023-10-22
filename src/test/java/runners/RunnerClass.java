@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         //for actual execution, we need to set the value of it to false
         dryRun = false, //if dry run is set to true, it will give you the missing step definition
         //tags will identify the scenarios ina  group and will execute all the scenarios having these tags
-       tags="@test1"
+       tags="@test123"
 
 )
 

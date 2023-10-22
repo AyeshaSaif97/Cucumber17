@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 
-public class CommonMethods {
+public class CommonMethods extends PageInitializer {
 
     public static WebDriver driver; //the driver instance is common throughout the project
 
@@ -31,6 +31,7 @@ public class CommonMethods {
       }
       driver.manage().window().maximize();
       driver.get(ConfigReader.getPropertyValue("url"));
+      initializePageObjects();
       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.IMPLICIT_WAIT));
 
     }
