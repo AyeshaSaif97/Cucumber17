@@ -3,6 +3,7 @@ package steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -52,5 +53,11 @@ public class LoginSteps extends CommonMethods {
 
       //  System.out.println(10/0);;
         System.out.println("my test passed");
+        //assertions to check if the element exist
+        //the moment assertion finds an error, it will stop the execution
+        //assert true, it is a boolean condition we write to check if it returns true or false
+        //
+        Assert.assertTrue(dashboardPage.welcomeAdminLocator.isDisplayed());
+     //   Assert.assertEquals();
     }
 }

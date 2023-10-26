@@ -17,10 +17,11 @@ import org.junit.runner.RunWith;
         dryRun = false,
         //if dry run is set to true, it will give you the missing step definition
         //tags will identify the scenarios ina  group and will execute all the scenarios having these tags
-        tags="@test123",
+        tags="@excel",
         //pretty is responsible for printing the steps and step definition in the console
         //in your framework, all reports should be generated under target folder
-        plugin = {"pretty","html:target/cucumber.html","json:target/cucumber.json"}
+        plugin = {"pretty","html:target/cucumber.html","json:target/cucumber.json","rerun:target/failed.txt"}
+        //rerun plugin will create failed.txt under target for all failed tc
 
 )
 
