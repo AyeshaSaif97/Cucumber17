@@ -11,7 +11,7 @@ Feature: Employee search
 
 
 
-@sprint2 @ahmed @regression @emp @test
+@sprint2 @ahmed @regression @emp @test @excel
   Scenario: Search an employee by Id
 
     #Given user is navigated to HRMS application
@@ -26,7 +26,7 @@ Feature: Employee search
    # Then user closes the browser
 
 
-@sprint4 @ali @regression @emp @test
+@sprint4 @ali @regression @emp @test @excel
 Scenario: Search an employee by name
   #Given user is navigated to HRMS application
   #When user enters admin username and password
